@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Meet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="start-again">
+        <div class="data">
+            <h1 id="after-end">You left the meeting</h1>
+            <button id="rejoin" type="button" class="btn btn-primary">Rejoin</button>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="my-window"></div>
+        <div class="others-window">
+            <div class="people first">
+                <h2 id="first">P</h2>
+            </div>
+            <div class="people second">
+                <h2 id="second">S</h2>
+            </div>
+            <div class="people third">
+                <h2 id="third">A</h2>
+            </div>
+            <div class="people fourth ">
+                <h2 id="fourth">B</h2>
+            </div>
+            <div class="people fifth">
+                <h2 id="fifth">S</h2>
+            </div>
+            <div class="people sixth">
+                <h2 id="sixth">V</h2>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="options">
+        <div class="options-btn">
+            <img id="unmute" src="img/unmute.png" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" title="Audio" alt="">
+            <img id="mute" src="img/mute.png" alt="">
+            <img id="video" src="img/video.png" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" title="Video" alt="">
+            <img id="no-video" src="img/no-video.png" alt="">
+            <img src="img/caption.png" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" title="Captions" alt="">
+            <img src="img/hand.png" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" title="Raise Hand" alt="">
+            <img id="more" src="img/more.png" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+                data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                title="More People" alt="">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">All People</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <div class="guy">
+                            <h3 class="P">P</h3>
+                            <li>Prem Kumar</li>
+                        </div>
+                        <div class="guy">
+                            <h3 class="S">S</h3>
+                            <li>Shubham Gupta</li>
+                        </div>
+                        <div class="guy">
+                            <h3 class="A">A</h3>
+                            <li>Aman Verma</li>
+                        </div>
+                        <div class="guy">
+                            <h3 class="B">B</h3>
+                            <li>Bhushan Kumar</li>
+                        </div>
+                        <div class="guy">
+                            <h3 class="S">S</h3>
+                            <li>Sourav Dey</li>
+                        </div>
+                        <div class="guy">
+                            <h3 class="V">V</h3>
+                            <li>Vivek</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <img src="img/screen-share.png" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" title="Screen Share" alt="">
+            <img id="end" src="img/end.png" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" title="Call end" alt="">
+        </div>
+    </div>
+
+
+    <script src="js/click.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
