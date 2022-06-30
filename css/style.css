@@ -46,7 +46,7 @@
   justify-content: center;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  height: 88vh;
+  height: 89.8vh;
 }
 
 .my-window {
@@ -177,6 +177,16 @@ p {
   background-color: rgb(209, 101, 7);
 }
 .B {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(49, 27, 8);
+}
+.Me {
   width: 50px;
   height: 50px;
   display: flex;
